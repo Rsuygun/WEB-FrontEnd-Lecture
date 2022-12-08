@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic Selectors</title>
+
+  <style>
+    /* Seçili h1 leri almak için '#' ile başlayıp id'lerini yazarsak seçtiğimiz h1'leri renklendirir.*/
+    /* Seçili p leri almak için '.' ile başlayıp class'larını yazarsak seçitğimiz paragrafları renklendirmiş oluruz.*/
+    /*Tüm h1 leri seç*/
+   /*h1{
+        color: red;
+        background: blue;
+    }
+    p{
+        color: green;
+        background: yellow;
+    }*/
+
+    /*h1,p{
+        color: red;
+        background: blue;
+    }*/
+
+    /*#logo{
+        color: red;
+        background: blue;
+    }*/
+
+    /*.info{
+        color: red;
+        background: blue;
+    }*/
+
+    /*#logo, .lead{
+        color: red;
+        background: blue;
+    }*/
+
+    /*#para1.lead{
+        color: red;
+        background: blue;
+    }*/
+
+    /*a{
+        text-decoration: none;
+    }
+    Bu kod sayesinde yazdırdığımız linklerin altındaki çizgileri kaldırırız.*/
+    
+    /*ul li a {
+        text-decoration: none;
+    }
+    Belirli konumdaki kodlar üzerinde değişiklik yapmak istersek 
+    kapsama sırasına göre aralarında boşluk bırakarak yapmalıyız.*/
+    
+    /*.info span {
+        color: red;
+    }*/
+
+    /*.info .primary {
+        color: red;
+    }*/
+
+    * {
+        font-size: 30px;
+    }
+    /* '*' işareti kapsayıcı anlamına gelir ve bütün kodlarda değişiklik yapmamızı sağlar.*/
+
+  </style>  
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, saepe?
+    </p>
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Molestiae, cumque!
+    </p>
+
+    <p class="info"> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, delectus?
+    </p>
+    <p>Test Paragraph</p>
+
+    <a href="#">Home</a>
+</body>
+</html>

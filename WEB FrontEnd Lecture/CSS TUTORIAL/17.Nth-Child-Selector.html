@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nth Child Selector</title>
+    <style>
+        p{
+            font-size: 1.5em;
+        }
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        
+        
+        ul li:nth-child(2n) {
+            color: red;
+            /* '2n' sadece çift sayılar n = 0 b = 0, 0, 2, 4, 6, 8, 10 */
+        }
+        ul li:nth-child(2n + 1) {
+            color: blue;
+            /* '2n + 1' sadece tek sayılar n = 0 b = 0, 1, 3, 5, 7, 9*/
+        }
+        ul li:nth-child(n + 4){
+            background: black;
+            /* Bu sayede istediğimiz kısımdan aşağısını düzenleyebiliyoruz.*/
+        }
+        /* p:first-child{
+            background: blue;
+            /*ilk paragrafta düzenleme yaptırır.
+        }
+        p:last-child{
+            background: green;
+            /*son paragrafta düzenleme yaptırır.
+        }
+        p:nth-child(1){
+            color: red;
+            /*seçtiğmiz satırlarda düzenleme yaptırır.
+        }
+        p:nth-child(3){
+            color: blue;
+        } */
+        /* p:nth-child(even){
+            color: red;
+            /*'even' çift sayılar için kullanılır.
+            Bu kodu yazdığımızda satır numaraları çift olan paragraflarda işlem yaptırır.
+        }
+        p:nth-child(odd){
+            color: blue;
+            /*'odd' tek sayılar için kullanılır.
+            Bu kodu yazdığımızda satır numaraları tek olan paragraflarda işlem yaptırır.
+        } */
+        /* 'an + b' n = 0, b = 0*/
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+    <!-- <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, vitae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, eveniet?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, magni.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, modi?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eum.
+    </p> -->
+</body>
+</html>
